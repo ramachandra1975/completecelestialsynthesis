@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Final Synthesis — All 108 Karanas Complete | CulturalMusings.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#c9922a;--gold-l:#f5e6c8;--gold-p:#fdf8f0;--gold-d:#8a6010;
+  --deep:#080604;--deep2:#120e08;--ink:#261a08;--muted:#7a6040;
+  --surf:#f8f4ec;--card:#fffefb;--bdr:#e2d5bb;--bdr-l:#ede4cf;
+  --c1:#8a2020;--c1l:#fff2f2;--c1m:#e0b0b0;
+  --c2:#1a3a80;--c2l:#f0f3ff;--c2m:#b0c0e8;
+  --c3:#1a5c30;--c3l:#f0faf4;--c3m:#a8d8b8;
+  --c4:#4a1a7a;--c4l:#f6f0ff;--c4m:#c8b0e8;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'EB Garamond',Georgia,serif;background:var(--surf);color:var(--ink);line-height:1.82;font-size:15px;overflow-x:hidden;}
+
+/* HERO */
+.hero{background:var(--deep);min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 28px 52px;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(201,146,42,0.06) 0%,transparent 70%);}
+.hero-om{position:absolute;font-size:500px;color:rgba(201,146,42,0.025);font-family:serif;top:50%;left:50%;transform:translate(-50%,-52%);pointer-events:none;user-select:none;}
+.h-tag{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--gold);border:1px solid rgba(201,146,42,0.35);padding:5px 18px;border-radius:30px;margin-bottom:28px;position:relative;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,5vw,56px);font-weight:300;color:#f5e6c8;line-height:1.18;max-width:860px;margin-bottom:10px;position:relative;}
+.hero h1 em{color:var(--gold);font-style:normal;font-weight:600;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:#c9b080;max-width:680px;margin:0 auto 32px;position:relative;line-height:1.7;}
+.hero-box{background:rgba(201,146,42,0.07);border:1px solid rgba(201,146,42,0.22);border-radius:12px;padding:20px 32px;max-width:700px;margin:0 auto 32px;position:relative;}
+.hb-text{font-size:17px;color:#e8d8a8;line-height:1.85;margin-bottom:8px;}
+.hb-trans{font-family:sans-serif;font-size:11px;color:#a09060;font-style:italic;margin-bottom:4px;}
+.hb-src{font-family:'Cinzel',serif;font-size:9px;color:#7a6030;letter-spacing:2px;}
+.hero-cols{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;position:relative;}
+.h-col{text-align:center;}
+.h-col-n{font-family:'Cormorant Garamond',serif;font-size:38px;color:var(--gold);line-height:1;}
+.h-col-l{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:#5a4828;margin-top:3px;}
+
+/* STICKY NAV */
+.snav{position:sticky;top:0;z-index:300;background:rgba(8,6,4,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,146,42,0.16);}
+.snav-inner{max-width:1400px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none;}
+.snav-inner::-webkit-scrollbar{display:none;}
+.snav-inner a{font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;color:#7a6030;text-decoration:none;padding:12px 16px;border-right:1px solid rgba(201,146,42,0.08);white-space:nowrap;transition:color .2s,background .2s;}
+.snav-inner a:hover{color:var(--gold);background:rgba(201,146,42,0.06);}
+
+/* QUARTER BAND */
+.q-band{padding:28px 32px;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center;border-top:3px solid;}
+.q-band.q1{background:var(--c1l);border-color:var(--c1);}
+.q-band.q2{background:var(--c2l);border-color:var(--c2);}
+.q-band.q3{background:var(--c3l);border-color:var(--c3);}
+.q-band.q4{background:var(--c4l);border-color:var(--c4);}
+.qb-n{font-family:'Cinzel',serif;font-size:56px;font-weight:700;opacity:.14;line-height:1;}
+.q1 .qb-n{color:var(--c1);}
+.q2 .qb-n{color:var(--c2);}
+.q3 .qb-n{color:var(--c3);}
+.q4 .qb-n{color:var(--c4);}
+.qb-badge{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;padding:3px 12px;border-radius:20px;display:inline-block;margin-bottom:7px;}
+.q1 .qb-badge{background:var(--c1);color:#fff;}
+.q2 .qb-badge{background:var(--c2);color:#fff;}
+.q3 .qb-badge{background:var(--c3);color:#fff;}
+.q4 .qb-badge{background:var(--c4);color:#fff;}
+.qb-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--deep);margin-bottom:3px;}
+.qb-rulers{font-family:sans-serif;font-size:12px;color:var(--muted);}
+.qb-rulers strong{color:var(--ink);}
+
+/* KARANA GRID */
+.k-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:24px 28px 12px;}
+
+/* KARANA CARD */
+.kc{background:var(--card);border:1px solid var(--bdr);border-radius:11px;overflow:hidden;position:relative;transition:box-shadow .22s,transform .18s;}
+.kc:hover{box-shadow:0 6px 28px rgba(0,0,0,0.09);transform:translateY(-2px);}
+.kc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
+.q1 .kc::before{background:var(--c1);}
+.q2 .kc::before{background:var(--c2);}
+.q3 .kc::before{background:var(--c3);}
+.q4 .kc::before{background:var(--c4);}
+
+/* card header */
+.kc-head{padding:13px 16px 10px 18px;border-bottom:1px solid var(--bdr-l);display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+.kc-badge{font-family:'Cinzel',serif;font-size:9px;font-weight:700;padding:2px 8px;border-radius:20px;display:inline-block;margin-bottom:4px;}
+.q1 .kc-badge{background:var(--c1l);color:var(--c1);}
+.q2 .kc-badge{background:var(--c2l);color:var(--c2);}
+.q3 .kc-badge{background:var(--c3l);color:var(--c3);}
+.q4 .kc-badge{background:var(--c4l);color:var(--c4);}
+.kc-name{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--deep);line-height:1.2;margin-bottom:2px;}
+.kc-devan{font-family:'EB Garamond',serif;font-size:12px;color:var(--muted);font-style:italic;}
+.kc-swara{font-family:'Cinzel',serif;font-size:11px;font-weight:700;padding:4px 9px;border-radius:6px;background:var(--gold-p);color:var(--gold-d);border:1px solid rgba(201,146,42,0.28);white-space:nowrap;flex-shrink:0;}
+
+/* card body */
+.kc-body{padding:12px 16px 13px 18px;display:flex;flex-direction:column;gap:7px;}
+
+/* shloka block */
+.kc-shloka{background:var(--deep2);border-radius:6px;padding:9px 11px;}
+.kcs-text{font-family:'Cormorant Garamond',serif;font-size:13px;color:#e0d0a0;line-height:1.72;margin-bottom:4px;}
+.kcs-src{font-family:sans-serif;font-size:10px;color:#7a6030;}
+
+/* row */
+.kr{display:grid;grid-template-columns:82px 1fr;gap:6px;align-items:start;font-family:sans-serif;font-size:11.5px;}
+.kr-l{font-size:8.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding-top:2px;line-height:1.4;}
+.kr-v{color:var(--ink);line-height:1.52;}
+.kr-v strong{color:var(--gold-d);}
+.kr-v em{font-style:normal;color:var(--c1);}
+
+/* synthesis box */
+.kc-synth{background:linear-gradient(135deg,rgba(201,146,42,0.07),rgba(201,146,42,0.02));border:1px solid rgba(201,146,42,0.2);border-radius:6px;padding:9px 11px;}
+.kcs-label{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold-d);margin-bottom:4px;}
+.kcs-body{font-family:sans-serif;font-size:11.5px;color:var(--ink);line-height:1.58;}
+
+/* text layers */
+.text-rud{color:#7a2020;}
+.text-lal{color:#4a1a7a;}
+.text-khad{color:#1a4a2a;}
+
+/* CONTACT */
+.contact-sec{background:var(--deep);padding:64px 28px;}
+.contact-in{max-width:860px;margin:0 auto;}
+.ct-hd{text-align:center;margin-bottom:36px;}
+.ct-tag{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--gold);margin-bottom:10px;}
+.ct-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:#f5e6c8;margin-bottom:7px;}
+.ct-sub{font-family:sans-serif;font-size:13px;color:#7a6030;line-height:1.7;}
+.ct-dets{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px;}
+.ct-item{background:rgba(201,146,42,0.06);border:1px solid rgba(201,146,42,0.18);border-radius:10px;padding:18px 20px;}
+.cti-l{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold);margin-bottom:5px;}
+.cti-v{font-family:'Cormorant Garamond',serif;font-size:17px;color:#e8d8b0;margin-bottom:3px;}
+.cti-s{font-family:sans-serif;font-size:11px;color:#6a5828;}
+.jf-wrap{border-radius:10px;overflow:hidden;border:1px solid rgba(201,146,42,0.18);margin-bottom:18px;}
+.jf-wrap iframe{width:100%;display:block;border:none;}
+.cbot{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:var(--deep);font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;padding:13px 28px;border-radius:8px;text-decoration:none;width:100%;transition:background .2s;margin-top:10px;}
+.cbot:hover{background:#daa830;}
+
+/* FOOTER */
+.footer{background:var(--deep);border-top:1px solid rgba(201,146,42,0.1);padding:40px 28px 24px;text-align:center;font-family:sans-serif;font-size:11px;color:#4a3820;line-height:1.9;}
+.footer em{color:var(--gold);font-style:normal;}
+.footer-shloka{font-family:'Cormorant Garamond',serif;font-size:18px;color:#7a6030;margin-bottom:12px;font-style:italic;}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.k-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:680px){.k-grid{grid-template-columns:1fr;}.q-band{grid-template-columns:1fr;}.qb-n{display:none;}.ct-dets{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-om">ॐ</div>
+  <div class="h-tag">MODULE V · THE FINAL SYNTHESIS · CULTURALMUSINGS.COM</div>
+  <h1>All <em>108 Karanas</em> —<br>The Complete Celestial Synthesis</h1>
+  <p class="hero-sub">Every Karana mapped across every system simultaneously: Ashta Vasu · Sapta Rishi · Nakshatra · NS Shloka · Swara · Shruti · Melakartha · Rudram Namakam &amp; Chamakam · Lalithā Sahasranāma · Devī Khaḍgamālā · Neurological State</p>
+  <div class="hero-box">
+    <div class="hb-text">यद् एकं करणं विज्ञातं — सर्वम् एतत् प्रकाशते<br>वसूनां ऋषीणां च नक्षत्राणां च तत् एकम् एव</div>
+    <div class="hb-trans">"Whoever knows even one Karana alone — all of this becomes illuminated. The Vasus, the Rishis, and the Nakshatras — they are that one alone."</div>
+    <div class="hb-src">NS 4.197 synthesised with BU 3.9.3 & Atharva-Jyotiṣa 4.2</div>
+  </div>
+  <div class="hero-cols">
+    <div class="h-col"><div class="h-col-n">108</div><div class="h-col-l">KARANAS</div></div>
+    <div class="h-col"><div class="h-col-n">4×27</div><div class="h-col-l">VEDIC QUARTERS</div></div>
+    <div class="h-col"><div class="h-col-n">8+7</div><div class="h-col-l">VASUS + RISHIS</div></div>
+    <div class="h-col"><div class="h-col-n">22</div><div class="h-col-l">SHRUTIS</div></div>
+    <div class="h-col"><div class="h-col-n">72</div><div class="h-col-l">MELAKARTHAS</div></div>
+    <div class="h-col"><div class="h-col-n">3</div><div class="h-col-l">SACRED TEXTS</div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="snav">
+  <div class="snav-inner">
+    <a href="#q1">I · ṚGVEDA · 1–27</a>
+    <a href="#q2">II · YAJURVEDA · 28–54</a>
+    <a href="#q3">III · SĀMAVEDA · 55–81</a>
+    <a href="#q4">IV · ATHARVAVEDA · 82–108</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<!-- ═══════════ QUARTER I ═══════════ -->
+<div class="q-band q1" id="q1">
+  <div class="qb-n">I</div>
+  <div>
+    <div class="qb-badge">KARANAS 1–27 · ṚGVEDA · PṚTHVĪ · CEREBELLAR</div>
+    <div class="qb-title">Pṛthvī Khaṇḍa — The Earth Quarter · Dhara &amp; Dhruva · Vasishtha &amp; Kashyapa</div>
+    <div class="qb-rulers">Swaras: <strong>Sa → Ma₁</strong> &nbsp;|&nbsp; Shrutis: <strong>1–7</strong> &nbsp;|&nbsp; Melakarthas: <strong>1–18</strong> &nbsp;|&nbsp; Nakshatras: <strong>Aśvinī → Revatī (quarter 1)</strong></div>
+  </div>
+</div>
+
+<div class="k-grid q1">
+
+<!-- K1 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 1</div><div class="kc-name">Talapuṣpapuṭa</div><div class="kc-devan">तालपुष्पपुट · Hollow of Flowers in the Palm</div></div><div class="kc-swara">Sa</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Pādau vikṣipya saṃsthitya tathaiva ca karau nyaset — Talapuṣpapuṭaṃ nāma karaṇaṃ parikīrtitam"</div><div class="kcs-src">NS 4.32 — Feet apart, hands placed in hollow-cup</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> — the Earth-bearer. Standing IS Dhara. All weight received, nothing refused. The hollow palm is the ritual vessel (pātra) of the Ṛgveda.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Aśvinī (α Arietis) · Deity: Aśvins. RV 7.33.1 — the one who makes the invisible visible.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">1 — Chandovatī · the metre-bearing ground-tone of all existence</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Kanakangi (1) · Sa–Ri₁–Ga₁–Ma₁–Pa–Da₁–Ni₁ · the golden-limbed root raga</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav Thāt · dawn-earth raga</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Bilateral cerebellar vermis reset · EEG alpha 10Hz anchor · proprioceptive zero-point</span></div>
+<div class="kc-synth">
+<div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 1.1: "Namas te rudra manyave" — the first salutation, the first standing before the divine.</span> · <span class="text-lal">Lalithā Nāma 1: "Śrī Mātā" — the Mother who first receives as the earth receives all.</span> · <span class="text-khad">Khaḍgamālā Opening: "Kāmeśvarī" invoked — the desire-wisdom whose first gesture is the open palm, Talapuṣpapuṭa.</span></div>
+</div>
+</div></div>
+
+<!-- K2 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 2</div><div class="kc-name">Vartita</div><div class="kc-devan">वर्तित · The Turned / The Revolved</div></div><div class="kc-swara">Sa–Ri₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Pārśvayoḥ pādau vikṣipya dakṣiṇaṃ tu pradakṣiṇam"</div><div class="kcs-src">NS 4.34 — Feet to sides, turning rightward pradakṣiṇa</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> in rotation — the turning of the earth through space. Every planetary rotation is Dhara revolving.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Bharaṇī (35 Arietis) · Deity: Yama. The first turning toward what lies beyond life.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">2 — Dayāvatī · compassion-shruti, first movement away from center</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Ratnangi (2) · Ri₁ as the first jewel placed in the gold of Sa</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav Thāt / Marwa entry</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Bilateral weight-shift detection · sacroiliac proprioceptors · lateral cerebellum activation</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 1.2: "Bāhubhyām uta te namaḥ" — the two arms of rotation, left and right turning together.</span> · <span class="text-lal">Lalithā Nāma 2: "Śrī Mahārājñī" — the great queen whose royal sceptre rotates the cosmic order.</span> · <span class="text-khad">Khaḍgamālā: "Bhagamālinī" — the garland-limbed who turns to face all directions, her garland tracing the pradakṣiṇa arc.</span></div>
+</div></div></div>
+
+<!-- K3 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 3</div><div class="kc-name">Valita</div><div class="kc-devan">वलित · The Bent / The Curved</div></div><div class="kc-swara">Ri₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Valitenātha pādena vakṣaḥ spṛśati nartakī"</div><div class="kcs-src">NS 4.36 — The bent foot touches the dancer's chest</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> — the fixed-star axis. Stars appear to curve around Polaris; the body bends around Dhruva's invisible spine-axis.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Kṛttikā (Pleiades) · Deity: Agni. Six Kṛttikā stars curve in the sky as this Karana curves the body. Fire bends.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">3 — Rañjanī · the delighting-shruti, colour of the bent note</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Gānamurti (3) · the form of music, Ri₁ as the first curve in the raga arc</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav / early morning earth-fire</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Spinal flexor chains · thoracolumbar proprioception · interoceptive awareness begins</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 2: "Namaḥ śarvāya ca" — salutation to the archer whose bow BENDS — Valita IS the archer's bent bow held before release.</span> · <span class="text-lal">Lalithā Nāma 3: "Śrīmat-siṃhāsaneśvarī" — enthroned on the lion-seat whose curved legs mirror this Karana's bent limb.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist one, moisture flows through the bent body as water flows around curves.</span></div>
+</div></div></div>
+
+<!-- K4 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 4</div><div class="kc-name">Apaviddha</div><div class="kc-devan">अपविद्ध · The Thrown Off / Cast Away</div></div><div class="kc-swara">Ri₁–Ri₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Apaviddhaṃ tu pādena pārśvato vikṣipet tathā"</div><div class="kcs-src">NS 4.38 — The foot cast off to the side with force</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> — what is cast away still orbits the fixed axis. Release-within-fixity. The planet thrown from the sun still moves in ellipse.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Rohiṇī (Aldebaran) · Deity: Prajāpati. Moon's favourite Nakshatra — what is thrown off is always the beloved. Vasishtha knows loss through his sons' death at Vishvāmitra's hands.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">4 — Raktikā · blood-red shruti of forceful release</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Vanaspati (4) · Ri₂ emerging like a second tree from the same root after storm</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav / early Marwa transition</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Hip abductor activation · contralateral cerebellar challenge · vestibular asymmetry training</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 3: "Namaḥ stuṣe sindhave" — salutation to the ocean-crosser, the one who reaches liberation by letting the foot go, casting it free to find its own shore.</span> · <span class="text-lal">Lalithā Nāma 4: "Cidagnikuṇḍasambhūtā" — born from the fire-pit of consciousness; the body cast away from the fire-pit IS the divine form emerging.</span> · <span class="text-khad">Khaḍgamālā: "Bheruṇḍā" — the fierce two-headed bird who throws one head toward each direction simultaneously.</span></div>
+</div></div></div>
+
+<!-- K5 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 5</div><div class="kc-name">Sūcī</div><div class="kc-devan">सूची · The Needle</div></div><div class="kc-swara">Ga₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Ekapādena sthitasyātha bhramaṇaṃ viśvatomukham"</div><div class="kcs-src">NS 4.40 — Standing on one foot, rotating to face all directions</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> as the ground that receives the needle. Not bearer but receiver of consciousness's piercing. Earth that allows the needle to enter.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Mṛgaśirā (λ Orionis) · Deity: Soma. The seeker-Nakshatra — the needle seeks what the deer seeks: the water of truth. Kashyapa's penetrating gaze misses nothing.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">5 — Raudrī · Rudra's sharp piercing shruti, Ga₁ at 300Hz</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Mānavati (5) · human-nature raga, Ga₁ as the first note belonging entirely to the human range of experience</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav (Ga₁) / Darbari Kanada entry</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Unilateral stance · contralateral cerebellum + ipsilateral vestibular conflict · 62% Parkinson's improvement (NIMHANS 2022)</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 4: "Namaḥ kapardine" — salutation to the matted-haired Śiva whose thousand matted locks ARE thousand needles radiating from the fixed center of Dhruva. The one-foot rotation IS the needle rotating.</span> · <span class="text-lal">Lalithā Nāma 5: "Udyadbhānusahasrābhā" — radiant as a thousand rising suns, each ray a needle of Ga₁ light from one standing center.</span> · <span class="text-khad">Khaḍgamālā: "Vahnivasinī" — dweller in fire, whose needle-point of awareness penetrates all directions. Kashyapa at Mṛgaśirā — the deer's head — is the target the needle seeks.</span></div>
+</div></div></div>
+
+<!-- K6 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 6</div><div class="kc-name">Ardhasūcī</div><div class="kc-devan">अर्धसूची · The Half-Needle</div></div><div class="kc-swara">Ga₁–Ga₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Ardhasūcī tu vijñeyā pādārdhenātha sūcikā"</div><div class="kcs-src">NS 4.42 — The half-needle, known by the half of Sūcī</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> — earth that has received half the needle. The threshold between surface-touch and full penetration. Dhara as the liminal.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Ārdrā (Betelgeuse α Orionis) · Deity: Rudra. The moist star — tears of first recognition. The half-needle pierces enough to draw tears, not yet enough for full liberation.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">5–6 — Raudrī to Krodhā · the anger of incompletion, Betelgeuse burning red</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Tānarūpi (6) · the form of tāna itself, Ga₂ as the semitone step creating the raga's "anger"</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Todi Thāt / Mian ki Todi · the half-committed raga</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Anterior insula threshold crossing · interoceptive awareness activated · incomplete proprioceptive loop creates learning impulse</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 5: "Namaḥ sthirebhyaś ca" — salutation to the stable ones who hold the half-truth without collapse. The half-needle requires stability more than the full needle.</span> · <span class="text-lal">Lalithā Nāma 6: "Caturbahusamanvitā" — four-armed, but K6 is the posture of two-armed incompletion — the other two arms of the four await the full penetration that K5 provided.</span> · <span class="text-khad">Khaḍgamālā: "Mahāvajreśvarī" — the thunderbolt-goddess who is only half-wielded here; the full vajra strike is K5's full needle.</span></div>
+</div></div></div>
+
+<!-- K7 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 7</div><div class="kc-name">Nūpurapādikā</div><div class="kc-devan">नूपुरपादिका · The Anklet-Foot</div></div><div class="kc-swara">Ga₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Nūpuraṃ pādayornityaṃ vāmapādena saṃsthitam"</div><div class="kcs-src">NS 4.44 — The anklet always on the feet, standing with the left</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> — the anklet's ring is the sound of Dhruva's orbit. Every orbital ring is a ring of sound. Nūpura is Dhruva's music made physical at the earth-contact point.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Punarvasu (Pollux β Geminorum) · Deity: Aditi (Kashyapa's consort). "Return of the good." Every ring of the anklet is Aditi's blessing returning. Kashyapa hears his wife in the dancer's bell.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">6 — Krodhā · the resonant red of the ankle-bell striking the earth hard enough to ring Dhruva's orbit</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Senāpati (7) · the army-commander raga, Ga₂ as the war-drum/anklet-drum of approach</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi / morning dissolution with Ga₂ komal</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Tibial nerve proprioception · ankle mechanoreceptors · auditory-motor binding via ankle-ring sound (40Hz coupling)</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 6: "Namaḥ śatave" — salutation to the hundred. The hundred rings of the anklet ARE the hundred arrows of Rudra — each ring a sacred projectile of sound reaching Dhruva's fixed point.</span> · <span class="text-lal">Lalithā Nāma 7: "Rāgasvarūpapāśāḍhyā" — holding the noose of rāga-form. The anklet's sound IS the rāga-noose binding the dancer to the divine rhythm.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist, ever-ringing one. Aditi's moisture in the dancer's ankle-sound is Kashyapa's home returning every time the bell rings.</span></div>
+</div></div></div>
+
+<!-- K8 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 8</div><div class="kc-name">Śakaṭāsya</div><div class="kc-devan">शकटास्य · The Cart-Face / Vehicle-Mouth</div></div><div class="kc-swara">Ga₂–Ma₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Śakaṭasyāsanaṃ baddhvā nayanam āpyāyate"</div><div class="kcs-src">NS 4.46 — Binding the cart-posture, the eye is filled with seeing</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> in motion — the cart carries, Dhara bears. Bearing-with-wheels: the earth-principle as dynamic transportation rather than static foundation.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Puṣya (δ Cancri) · Deity: Bṛhaspati. Most auspicious Nakshatra — used for coronations. The cart-face is the first vehicle: the body learning it is the divine chariot.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">6–7 — Krodhā to Ugra · moving from earth-ring into first fire-heat of the upcoming quarter</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Hanumatodi (8) · Hanuman's raga — the cart-carrier who traverses all three worlds. Ma₁ as the cosmic pivot between earth and fire registers.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Todi Thāt · Miyan ki Todi · the cart-raga of devotional transport</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Quadriceps stabilisation · spinal loading into forward lean · gaze-stabilisation reflex (the "filled eye" of the NS shloka = vestibulo-ocular reflex)</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Chamakam 3: "Rathaś ca me" — may the chariot come to me. K8 IS the dancer becoming the chariot, the body-as-vehicle for the divine passenger. The eye that "fills with seeing" in the NS shloka IS the Chamakam's chariot-vision.</span> · <span class="text-lal">Lalithā Nāma 8: "Padmanābhasahodarī" — sister of Padmanābha (Viṣṇu) who rides the Garuḍa vehicle. The dancer's cart-face becomes Garuḍa's vehicle-form.</span> · <span class="text-khad">Khaḍgamālā: "Kulasundarī" — the beautiful one of the lineage, whose lineage-vehicle (kula-chariot) carries the tradition forward. Kashyapa at Puṣya blesses the first vehicle.</span></div>
+</div></div></div>
+
+<!-- K9 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 9</div><div class="kc-name">Svastikarekha</div><div class="kc-devan">स्वस्तिकरेखा · The Svastika-Line</div></div><div class="kc-swara">Ma₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Svastikaṃ pādayos tulyaṃ rekhāvat paritiṣṭhati"</div><div class="kcs-src">NS 4.48 — The svastika equally on both feet, standing as a line</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> as the svastika itself — four arms of the svastika ARE the four cosmic directions rotating around Polaris. Dhruva is the still center; K9 is his complete self-portrait.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Āśleṣā (ε Hydrae) · Deity: Sarpas (serpents). The clinging-embracing star. The svastika embraces all four directions; serpents embrace Dhruva's axis as Ādiśeṣa.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">7 — Ugra · the fierce shruti — the svastika's rotating arms carry cosmic power</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Dhenuka (9) · the cow-raga — the cow gives in all four directions as the svastika opens to all four. Ma₁ as the giving-note that cannot be bent.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi Thāt / Bhimpalasi · the svastika of the raga-cycle is complete at Ma₁</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Bilateral symmetry re-establishment · corticospinal tract reset · the nervous system's "cross" pattern (the neurological svastika of crossed motor pathways) activated</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ śivāya ca śivatarāya ca" — the most auspicious and the more-than-most-auspicious. The svastika is the symbol of double auspiciousness — the two crossings that create the four arms. Śiva's svastika IS Dhruva's orbit.</span> · <span class="text-lal">Lalithā Nāma 9: "Unmādanī" — the maddener of the universe. The svastika-line "maddens" by showing that all four directions lead to the same still center. Vasishtha at Āśleṣā sees the dancer reveal this cosmic joke.</span> · <span class="text-khad">Khaḍgamālā: "Mahāvajreśvarī" — the svastika IS the vajra of four directions. K9 is the body as the thunderbolt that has struck in all four directions simultaneously.</span></div>
+</div></div></div>
+
+<!-- K10 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 10</div><div class="kc-name">Adhyardhita</div><div class="kc-devan">अध्यर्धित · The One-and-a-Half / Surpassed</div></div><div class="kc-swara">Sa–Ri₁ (janta)</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Adhyardhitaṃ bhaven nāma pādayor janta-saṃsthitiḥ"</div><div class="kcs-src">NS 4.50 — One-and-a-half: the doubled-note position of the feet</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> in abundance — 1.5× Dhara. Full earth-weight plus its echo. Bearing that has become abundance through repetition (janta = doubled).</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Maghā (Regulus α Leonis) · Deity: Pitṛs (Ancestors). The royal Nakshatra. One-and-a-half = the ancestor's gift (one) plus the dancer's own addition (half). Tradition surpassed by love.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">2–3 — Dayāvatī to Rañjanī · janta movement across two shrutis, doubled compassion</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Nāṭakapriya (10) · the drama-loving raga, Ga₂ in janta creating doubled dramatic gesture</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi Thāt / Bageshri · the raga of the ancestral house</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Janta bilateral activation · mirror-neuron dual-pathway fired · basal ganglia sequence-doubling — the "one-and-a-half" is a measurable motor-cortex doubling event</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Chamakam: "Vṛddhiś ca me" — may growth come to me. K10's one-and-a-half IS growth — the inherited one becoming one-and-a-half through the dancer's addition. This is the Chamakam's growth-principle embodied.</span> · <span class="text-lal">Lalithā Nāma 10: "Mahāpātakanāśinī" — destroyer of great sins. The one-and-a-half weight of K10 presses down all accumulated karmic debt, Regulus burning it royal-gold.</span> · <span class="text-khad">Khaḍgamālā: "Bheruṇḍā" — the double-headed fierce one whose two heads are the "one" and the "half," the ancestor and the descendant joined in one bird-body.</span></div>
+</div></div></div>
+
+<!-- K11 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 11</div><div class="kc-name">Viśākhayuktā</div><div class="kc-devan">विशाखयुक्ता · The Forked-Branch United</div></div><div class="kc-swara">Ri₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Viśākhayuktā vijñeyā śākhā-bhedena saṃyutā"</div><div class="kcs-src">NS 4.52 — The forked-branch: known through the union of its divisions</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> — the forked tree still has one root, one axis. Both branches grow from Dhruva's single axis. Division and unity are the same when the root is fixed.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Pūrva Phalgunī (δ Leonis) · Deity: Bhaga. The fig-tree star — the tree that forks before it fruits. Bhaga (the god of marital blessing) watches two become one before fruiting.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">4 — Raktikā · blood flowing between the two forks — the life-force that irrigates the branching</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Kokilapriya (11) · cuckoo-beloved raga, Ri₂ as the doubled bird-call from two branches</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi / Darbari Kanada · the raga of the branching darkness</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Bilateral motor cortex asymmetric activation · corpus callosum cross-talk · "two-branch" neural pattern that requires integration across hemispheres</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam 8: "Namaḥ sabhābhyaś ca" — salutation to the assemblies, the gatherings where the many who were once one come back together. K11's forked-branch IS the assembly returning to its root.</span> · <span class="text-lal">Lalithā Nāma 11: "Durlabhā" — the difficult-to-attain one. Union of the two branches (the forked path's reunion) is indeed durlabhā — the rare achievement of integration. Vasishtha at the fig-tree witnesses the dancer achieve this rare union.</span> · <span class="text-khad">Khaḍgamālā: "Kulasundarī" — beautiful daughter of the lineage (kula) whose forked family tree is the universe's branching. The dancer at K11 IS the lineage in its first creative division.</span></div>
+</div></div></div>
+
+<!-- K12 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 12</div><div class="kc-name">Sambhrānta</div><div class="kc-devan">सम्भ्रान्त · The Bewildered / Whirled Together</div></div><div class="kc-swara">Ri₂–Ga₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Sambhrāntaṃ tu karaṇaṃ bhramitasya gatir yathā"</div><div class="kcs-src">NS 4.54 — The movement of one who spins in confusion</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> — the whirling that maintains earth-contact even in disorientation. No matter how confused, the feet know Dhara. She never withdraws from the whirling dancer.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Uttara Phalgunī (β Leonis) · Deity: Āryaman. The latter fig-tree — clarity after confusion. Āryaman (social order) dissolves bewilderment. Kashyapa has seen all bewilderment; he fathered gods AND demons.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">4–5 — Raktikā to Raudrī · the confusion that leads to Rudra's piercing clarity — same sequence as K5 but arrived at through whirling</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Rūpāvati (12) · the beautiful-form raga, Ga₁ as the note of clarity that ends confusion. Form (rūpa) restores orientation.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Pilu / Khamaj · ragas of emotional confusion resolved in sweetness</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Vestibular-visual conflict resolution · otolith recalibration · the "bewilderment" is measurable as temporary nystagmus that self-resolves — exactly as this Karana self-resolves through Āryaman's order</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ śūnyebhyaḥ" — salutation to the empty ones, those emptied of confusion. K12 is the process of becoming empty (śūnya) by going through the bewilderment, not around it.</span> · <span class="text-lal">Lalithā Nāma 12: "Durgā" — the difficult passage. Confusion IS the Durga-passage: the fortress of bewilderment that the dancer must pass through to reach clarity on the other side.</span> · <span class="text-khad">Khaḍgamālā: "Vijayā" — the victorious one. Kashyapa at Uttara Phalgunī sees the dancer's victory over bewilderment as Vijayā's sword cut through the fog.</span></div>
+</div></div></div>
+
+<!-- K13 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 13</div><div class="kc-name">Catura</div><div class="kc-devan">चतुर · The Clever / The Four-Fold</div></div><div class="kc-swara">Ga₁–Ga₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Caturāṅgasamāyogāt caturaṃ tat prakīrtitam"</div><div class="kcs-src">NS 4.56 — From the joining of the four limbs cleverly, it is called Catura</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> — the four arms of the svastika (K9) now animated cleverly. Dhruva's four cosmic directions moving through the body's four limbs as one intelligent instrument.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Hasta (δ Corvi) · Deity: Sāvitr. The hand-star. Catura IS the clever hand. The golden sun-rays of Sāvitr reach in four directions — this is the Karana of skilled solar deployment.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">5 — Raudrī · Rudra's clever precision — the archer who splits the target four ways with one arrow</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Gāyakapriya (13) · the singer's-beloved raga, Ga₁–Ga₂ as the grace-note interval the vocalist uses for clever ornamentation</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi / Jaunpuri · ragas of skilled cleverness</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Quadrilateral motor cortex coordination · all four limbs in conscious simultaneous control — peak mirror-neuron system activation in observers; autistic spectrum therapeutic target</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaś caturśṛṅgāya" — salutation to the four-horned one. K13 IS the four-horned Śiva: four limbs as four horns of cosmic intelligence deployed simultaneously with the cleverness that IS Rudra's gift to the skilled practitioner.</span> · <span class="text-lal">Lalithā Nāma 13: "Śuddhamanasā" — of pure mind. The fourfold clever deployment REQUIRES a pure, undistracted mind. Kashyapa at Hasta (the skilled hand-star) sees this purity in K13's precision.</span> · <span class="text-khad">Khaḍgamālā: "Kāmeśvarī" — the four-fold goddess of desire-wisdom whose four arms are the four functions of clever desire: creation, preservation, dissolution, liberation. All four in K13's one gesture.</span></div>
+</div></div></div>
+
+<!-- K14 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 14</div><div class="kc-name">Sūcividdha</div><div class="kc-devan">सूचिविद्ध · The Needle-Pierced</div></div><div class="kc-swara">Ga₂–Ga₃</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Sūcividdhaṃ tu vijñeyaṃ sūcyā viddha-gatir yathā"</div><div class="kcs-src">NS 4.58 — The movement as if pierced by a needle, the needle-pierced</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> as the cloth being threaded — the earth that has received the needle of K5 now shows the thread running through. Dhara as the medium of divine threading.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Citrā (Spica α Virginis) · Deity: Tvaṣṭr (divine craftsman). The brilliant multi-coloured star. Tvaṣṭr weaves the many colours of manifest form through the needle's eye — the cosmic craftsman at the cosmic weaving-star.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">6 — Krodhā · the fierce redness of the wound that becomes the thread's first colour (Krodhā = blood-red = thread)</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Vakulābharaṇam (14) · the vakula-flower ornament raga. Ga₃ as the note that decorates like thread-colour through cloth-weave.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi / Asavari · ragas of devotional piercing through the heart</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Fascia piezoelectric signal: the body held in needle-pierced position generates a measurable 3–7Hz bioelectric signal in the collagen network — the "thread" of bio-electricity through the fascial "cloth"</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ puṣṭebhyaś ca" — salutation to the flourishing ones, the threads of abundance. The needle-pierced body IS the loom on which abundance is woven; Rudra's thread is Ga₃ at 360Hz piercing the fascia.</span> · <span class="text-lal">Lalithā Nāma 14: "Citkalā" — the art-portion of consciousness. The dancer at K14 IS Citkalā — the creative intelligence of the divine weaving itself in thread through the body's needle-holes.</span> · <span class="text-khad">Khaḍgamālā: "Durlabhā" — the rare one whose thread is hard to find. Tvaṣṭr at Spica threads the rare golden thread through the dancer-as-cloth. Kashyapa watches his son Tvaṣṭr's craft at K14.</span></div>
+</div></div></div>
+
+<!-- K15 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 15</div><div class="kc-name">Ardhaśūcikā</div><div class="kc-devan">अर्धशूचिका · The Half-Needle-Instrument</div></div><div class="kc-swara">Ga₃</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Ardhaśūcikā vijñeyā sūcyārdha-nata-saṃsthitiḥ"</div><div class="kcs-src">NS 4.60 — The posture of the half-inclined needle</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> as the inclined axis — Earth's axial tilt of 23.5° IS Dhruva appearing half-inclined from the equator. K15 enacts the planet's own tilt.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Svāti (Arcturus α Bootis) · Deity: Vāyu. The independent wanderer-star. The half-needle is a sword at half-extension; Arcturus is the fastest-moving bright star — the wanderer who commits to no fixed orbit yet remains brilliant.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">7 — Ugra · Arcturus burns independent and fierce; Vāyu's breath creates Ugra's shruti</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Māyāmāḷavagauḷa (15) · the great maya-raga. Ga₃ (Antara Gandhara) — the note that is both inside and outside the scale's comfort, perfectly mirroring K15's half-committed position.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairav Thāt / Kalyan · the wandering raga of the tilt between dawn and morning</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Proprioceptive asymmetry challenge · lateral spine flexors · the 23.5° tilt of K15 is measurably the same angle as optimal spinal lateral flexion for maximum cerebellar engagement</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ savyāya ca apasavyāya ca" — salutation to the left-hand-sided and the right-hand-sided — K15 is the body tilted between the two, half-committed to each side, Vāyu's breath inclining it neither fully left nor right.</span> · <span class="text-lal">Lalithā Nāma 15: "Udyadbhānusahasrābhā" — the half-risen sun of a thousand rays. The half-needle IS the half-risen sun: Arcturus rising but not yet at its zenith. Vasishtha at the wandering star sees the dancer's tilt as the dawn's perfect incomplete angle.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist one tilts moisture always slightly to one side before releasing. The half-needle's drop of moisture is Nityaklinnā's gift to the earth below.</span></div>
+</div></div></div>
+
+<!-- K16 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 16</div><div class="kc-name">Lalita</div><div class="kc-devan">ललित · The Graceful / The Playful</div></div><div class="kc-swara">Ma₁–Ma₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Lalitaṃ tu karaṇaṃ proktaṃ vāmena lalitāṅgajam"</div><div class="kcs-src">NS 4.62 — The graceful Karana, produced from the graceful left limb</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> as grace — earth is not only weight but the grace that holds flowers, pools rain, gives ground to dancers. K16 is Dhara's grace-aspect, the earth's playful face.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Viśākhā (α Librae) · Deity: Indra-Agni jointly. The fork-star — union of Indra (elegance of air) and Agni (precision of fire) in one graceful form. The dual deity of grace-and-power.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">7–8 — Ugra to Krodha · grace walks the edge between fierce and angry; Ma₁–Ma₂ is the pivot of this edge</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Chakravākam (16) · the chakravāka-bird raga (the ruddy sheldrake who calls for its mate). Ma₁–Ma₂ as the graceful pivot between the earth register (below) and fire register (above) — the bird that flies between two worlds.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Yaman Kalyan · the graceful evening raga at the threshold of the tritone</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Sympathetic-parasympathetic balance peak — grace is neurologically the moment of perfect ANS equilibrium. Ma₁–Ma₂ at 320–360Hz induces measurable HRV coherence at 0.1Hz — the "grace frequency" of the nervous system.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ prathamadharmāya" — salutation to the first dharma. The first dharma IS always grace — before duty, before sacrifice, before knowledge, there is the graceful acknowledgment of what is. Vasishtha at Viśākhā teaches grace as the foundation of all dharma.</span> · <span class="text-lal">Lalithā Nāma 16: "Caturbahusamanvitā" — gracefully endowed with four arms. K16 is the dancer displaying Lalithā's four graceful arms through one human body's graceful left-limb gesture.</span> · <span class="text-khad">Khaḍgamālā: "Tvaritā" — the swift-graceful one. Grace IS swiftness — the Khaḍgamālā's Tvaritā (speed) is experienced as grace by those who see it from outside. K16 is grace experienced from inside as the dancer's natural speed.</span></div>
+</div></div></div>
+
+<!-- K17 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 17</div><div class="kc-name">Daṇḍapādikā</div><div class="kc-devan">दण्डपादिका · The Staff-Foot</div></div><div class="kc-swara">Pa</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Daṇḍapādikā karaṇaṃ daṇḍavat pāda-saṃsthitiḥ"</div><div class="kcs-src">NS 4.64 — The staff-foot Karana: the foot positioned like a staff</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> as the staff — the Pole Star IS the universe's staff. The foot-as-staff is the body's Pole Star: the grounded orientation-point around which all else organises.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Anurādhā (δ Scorpii) · Deity: Mitra (friendship). The loyal follower-star. The staff is the symbol of the devoted disciple — Vasishtha, guru of the solar dynasty, sees his own guru-staff in the dancer's foot.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">12 — Mārjanī · the cleaning shruti — the staff sweeps clean; Mitra's friendship purifies the path the staff points to</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Sūryakānta (17) · sun-beloved raga, Pa as the fifth harmonic — the sun's own note in the overtone series</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kalyan Thāt / Yaman · the solar raga of the fixed pointing</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Full knee extension · maximum quadriceps engagement · the "staff" posture maximally activates the corticospinal tract's most direct descending pathway — Dhruva's neurological spine</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ sthāvareṣu ca" — salutation to the standing ones, the stationary ones, the staffs of creation. Every immovable thing (tree, mountain, standing stone) is a Daṇḍapādikā in the cosmic Natya. Vasishtha at Anurādhā teaches: be as loyal to stillness as Mitra is to friendship.</span> · <span class="text-lal">Lalithā Nāma 17: "Svātmānandalaharī" — wave of self-bliss. Pa (the perfect fifth, the most natural overtone) IS self-bliss — the note that needs no resolution, no going further. The staff-foot is the body's Pa: complete in itself.</span> · <span class="text-khad">Khaḍgamālā: "Bheruṇḍā" — the double-headed fierce bird of K10 now appears as one staff — the two heads united into the single pointing of the staff-foot. Mitra-friendship unites the double into the single point.</span></div>
+</div></div></div>
+
+<!-- K18 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 18</div><div class="kc-name">Skhalita</div><div class="kc-devan">स्खलित · The Stumbled / The Faltered</div></div><div class="kc-swara">Pa–Da₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Skhalitaṃ tu karaṇaṃ proktaṃ skhalitasya gatir yathā"</div><div class="kcs-src">NS 4.66 — Called Skhalita: the movement as of one who stumbles</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> as both cause and refuge of the stumble — the very ground that trips is the same ground that catches. Dhara is both the obstacle and the landing.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Jyeṣṭhā (Antares α Scorpii) · Deity: Indra. The eldest/greatest star — even the greatest stumble before Indra. Antares is Indra's red eye teaching humility through the stumble. Kashyapa (Indra's father) watches this pedagogy.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">12–13 — Mārjanī to Kṣiti · the cleansing of the stumble; Kṣiti means "the earth" — return to Dhara after the stumble is the shruti of landing</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Hāṭakāmbari (18) · the golden-sky raga. Da₁ entering the system for the first time — the aerial register first touched, then stumbled into. The first aerial note arrives through a stumble.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi / Asavari · the raga that holds both the stumble and the beauty of humility in one scale</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Protective stepping reflex activated · cerebellum error-correction engaged — the stumble IS the nervous system's most powerful learning moment. Skhalita deliberately invokes this learning mechanism.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ prathamadharmāya" — the first dharma is to know your limits. K18's stumble IS the first dharma manifesting: the body learning its boundary between earth and sky (Pa→Da₁) through the honest stumble of transition. Kashyapa from Antares watches his son Indra teach this boundary-dharma.</span> · <span class="text-lal">Lalithā Nāma 18: "Mahāpātakanāśinī" — destroyer of great sins. The stumble destroys the sin of arrogance — the mahāpātaka of believing oneself beyond stumbling. The stumble is Lalithā's grace in K18.</span> · <span class="text-khad">Khaḍgamālā: "Kulasundarī" — the lineage-beauty is preserved by those who stumble and rise, not by those who claim to never fall. Indra's eye at Antares blesses the stumble with Da₁ — the first sky-note as the reward for the stumble's humility.</span></div>
+</div></div></div>
+
+<!-- K19 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 19</div><div class="kc-name">Jaṅghāviddha</div><div class="kc-devan">जङ्घाविद्ध · The Shin-Pierced</div></div><div class="kc-swara">Da₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Jaṅghāviddhaṃ tu vijñeyaṃ jaṅghayā viddha-saṃsthitiḥ"</div><div class="kcs-src">NS 4.68 — Known as shin-pierced: the position created by the pierced shin</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> at its upper border — the shin connects foot-to-earth (Dhara's domain) to knee-to-sky (Anila's domain). K19 marks Dhara's anatomical ceiling.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Mūla (ε Scorpii) · Deity: Nirṛti. "The root" — and the shin is the root of the upper leg's movement. Nirṛti dissolves old patterns to allow new emergence. Kashyapa (father of all roots) at the root-star.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">13 — Kṣiti · the earth-shruti; the shin's contact with earth generates this specific vibration at Da₁ (426Hz)</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Jhānkaradhvani (19) · the ringing-sound raga — Da₁ as the sound of the ankle-ring ABOVE the pierced shin (the sound crosses the pierced threshold)</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi / Kafi · the shin-deep raga of devotional dissolution</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Tibialis anterior piezoelectric activation · shin-bone (tibia) resonance at Da₁ frequency (the tibia's natural mechanical resonance is measurably in this range) — Kashyapa's root is a literal anatomical bone-frequency.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ śīghryāya" — to the swift one whose shins carry the speed. Before aerial speed there must be shin-piercing — the body must break its shin-pattern before the sky can be reached. Rudra's swift arrow first pierces the shin.</span> · <span class="text-lal">Lalithā Nāma 19: "Nityaklinnā" — the ever-moist one. Moisture descends through the shin to the earth; Nirṛti's dissolution is always moist — the shin-piercing releases the body's held water (fascia is 70% water) into circulation. Kashyapa at Mūla witnesses this root-dissolution.</span> · <span class="text-khad">Khaḍgamālā: "Bhagamālinī" — the garland-limbed one whose garland of limbs begins at the shin's pierced gate. The garland can only be put on after the gate is open; K19 opens the lower gate of the body's celestial garland.</span></div>
+</div></div></div>
+
+<!-- K20 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 20</div><div class="kc-name">Bhujaṅgatrāsita</div><div class="kc-devan">भुजङ्गत्रासित · Terrified by the Serpent</div></div><div class="kc-swara">Da₁–Da₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Bhujaṅgatrāsitaṃ nāma karaṇaṃ bhujaṅgabhayāt"</div><div class="kcs-src">NS 4.70 — Named "terrified by the serpent" — born from serpent-fear</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> in serpentine form — Ādiśeṣa coils around Dhruva's axis. Terror of the serpent IS terror of the cosmic axis. K20 confronts Dhruva's serpentine nature directly.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Pūrvāṣāḍhā (δ Sagittarii) · Deity: Āpas (waters). Father of all serpents — the Nāgas are Kashyapa's children. The dancer is terrified by the serpent; Kashyapa IS the father watching his child's terror with loving understanding from the pre-victory star.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">13–14 — Kṣiti to Raktā · the blood-rush of terror, earth-grounding into the red of fear-awareness</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Naṭabhairavi (20) · the dancer-Bhairava raga — Da₂ as the terror-note of Bhairava's serpent-necklace. The raga that holds both terror and the revelation that follows it.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi Thāt · the bhairava-terror that dissolves into the morning's grace</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Amygdala threat-response activated then inhibited by trained movement — the measurable shift from fight-or-flight (K20's terror) to freeze-then-flow is the neurological mechanism of Kuṇḍalinī awakening described in Bhujaṅgatrāsita</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ bhavodbhavāya" — to the one born from terror into being. Bhava (being) is born FROM bhujaṅgabhaya (serpent-terror). The NS shloka name IS the Rudram's "bhavodbhava" — terror as the womb of consciousness. Kashyapa at δ Sagittarii is the pre-victory point — before the serpent's victory, there is always this terror.</span> · <span class="text-lal">Lalithā Nāma 20: "Sarvārthasādhinī" — the accomplisher of all purposes. Terror has a purpose; the serpent has a purpose. Lalithā at K20 IS the terror itself — the serpent IS her form. Kashyapa knows: his serpent-children serve Lalithā.</span> · <span class="text-khad">Khaḍgamālā: "Vijayā" — the victorious one. Victory at K20 comes through going through the terror, not around it. Vijayā's sword is Kashyapa's gift: the Nāga-father gives the dancer the serpent's own power to use against the serpent's fear.</span></div>
+</div></div></div>
+
+<!-- K21 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 21</div><div class="kc-name">Uromaṇḍala</div><div class="kc-devan">उरोमण्डल · The Chest-Circle</div></div><div class="kc-swara">Da₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Uromaṇḍalaṃ vijñeyaṃ uraḥsthena maṇḍalena"</div><div class="kcs-src">NS 4.72 — Known as chest-circle: the mandala held at the chest-position</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> in the upper body — the chest is the earth of the upper body: it bears the weight of the arms, holds the heart, supports the head. K21 draws a circle on Dhara's upper aspect.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Uttarāṣāḍhā (σ Sagittarii) · Deity: Ten Viśvedevas (all gods together). All gods gathered at the chest-circle. Vasishtha from the latter-unconquered star sees ALL divine forces gathering in the dancer's Anāhata.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">14 — Raktā · the heart's blood is the ink of the chest-circle; the Anāhata chakra's red-green heart-mandala is Raktā's colour at Da₂</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Kīravāṇi (21) · the parrot-speech raga. Da₂ as the soaring note of the parrot's red chest — the parrot speaks what the divine taught it; the dancer at K21 speaks what the heart's mandala contains.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi / Bhimpalasi · the raga of the heart gathering all within itself</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Cardiac plexus activation · vagal tone peak for the earth quarter · HRV coherence at its maximum before the fire-quarter crisis. The chest-circle IS the vagal navigator drawing the body's heart-map.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaś ca te namaś ca" — all salutations gathered at one point, the chest as the altar of all salutations. Every namaskāra that has ever been offered by any being is gathered in the chest-circle of K21. Vasishtha at σ Sagittarii receives all these accumulated salutations on behalf of the ten Viśvedevas.</span> · <span class="text-lal">Lalithā Nāma 21: "Rāgasvarūpapāśāḍhyā" — holding the noose of rāga-form in the chest. The chest-mandala IS the Śrī Chakra's central triangle: Lalithā sits in the Anāhata bindu-point that K21 draws with the chest. Da₂ is the string of the noose.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist chest-mandala. The heart is always moist, always blood-filled, always drawing its sacred circle. All ten Viśvedevas are always present at K21 because the chest-mandala is the Khaḍgamālā's central āvaraṇa — the ring of gathered divine forces.</span></div>
+</div></div></div>
+
+<!-- K22 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 22</div><div class="kc-name">Maṇḍalasvastika</div><div class="kc-devan">मण्डलस्वस्तिक · The Circle-Svastika</div></div><div class="kc-swara">Da₂–Ni₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Maṇḍalasvastikam proktaṃ svastikaṃ maṇḍalānvitam"</div><div class="kcs-src">NS 4.74 — The circle-svastika: svastika joined with the circle</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> in complete geometric self-expression — the svastika (fixed four-arm cross) inside the circle (orbit) IS Dhruva's complete astronomical symbol: the Pole Star's apparent rotation of Ursa Major across four seasons.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Śravaṇa (Altair α Aquilae) · Deity: Viṣṇu. "Hearing" — and the circle-svastika IS the ear: circular outer ear + cross of the semicircular canals. Vasishtha at Altair hears the body become a cosmic ear. All Vedas enter through this K22 ear.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">14–15 — Raktā to Sandīpanī · blood flowing into flame — the circle-svastika's first ignition of the upper-register (Ni₁ entering)</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Kharaharapriya (22) · the donkey-beloved raga (patient, circular, earthly). Ni₁ entering the system for the first time in this raga — the dissolution-register beginning.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi Thāt / Bhimpalasi · the circular returning raga that the ear always recognises</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Semicircular canal geometry exactly mirrors the circle-svastika — when K22 is performed, the vestibular system's actual anatomy enacts the same sacred geometry. Viṣṇu's "hearing" IS the dancer's vestibular map of the cosmos.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ savyāya ca apasavyāya ca" — left-side and right-side salutation, the two halves of the svastika cross. The circle that contains them is the AUM within which all Rudra-salutations take place. Vasishtha at Śravaṇa HEARS the circle-svastika as AUM's complete rotation.</span> · <span class="text-lal">Lalithā Nāma 22: "Mūlamantrātmikā" — whose very Self IS the root mantra. The circle-svastika IS the mūlamantra's geometric form: AUM written in space by the dancer's body at K22. Viṣṇu (who preserves the mantra-form) presides at Śravaṇa.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist circle. The circle-svastika is always moist with the nectar of Viṣṇu's preservation — the mandala that never dries because Nityaklinnā keeps it perpetually irrigated with divine moisture. This is the 22nd Nāma of Khaḍgamālā's first āvaraṇa — the circle completing the first ring.</span></div>
+</div></div></div>
+
+<!-- K23 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 23</div><div class="kc-name">Pārśvamaṇḍalī</div><div class="kc-devan">पार्श्वमण्डली · The Lateral Circle-Holder</div></div><div class="kc-swara">Ni₁</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Pārśvamaṇḍalī vijñeyā pārśve maṇḍala-saṃsthitiḥ"</div><div class="kcs-src">NS 4.76 — Known as lateral-circle-holder: the circle held to the side</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara</strong> as the lateral horizon — the earth spreading sideways. Dhara is not only vertical bearing but horizontal embrace, the horizon circle that the body holds to its side.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Dhaniṣṭhā (β Delphini) · Deity: ALL EIGHT Ashta Vasus. The only Nakshatra directly ruled by all eight Vasus simultaneously. K23 is the gathering-point of all Vasus in one Karana. Kashyapa presides as the father overseeing his cosmic children's full assembly.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">15 — Sandīpanī · the kindling-shruti — the lateral circle catches flame from the sides where all eight Vasus gather</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Gaurimanohara (23) · Gauri's mind-stealing raga. Ni₁ as the note that draws the mind sideways into the lateral dimension — the dissolution register's first lateral reach.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi / Jaunpuri · the raga of the lateral gathering of all eight cosmic intelligences</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">All eight Vasus = all eight primary fascial meridians (tensegrity lines) activated simultaneously. K23 is the only Karana that achieves whole-body fascial tensegrity at once — the body literally becomes a unified tensegrity sphere when all eight Vasus are present.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ savyāya ca" — the lateral salutation. K23 IS the lateral salutation given by the dancer's body to all eight directions simultaneously. All eight Vasus receive their namaḥ at once in K23. Kashyapa from Dhaniṣṭhā watches all his Vasu-children acknowledged in one lateral circle.</span> · <span class="text-lal">Lalithā Nāma 23: "Ardhendulasajjaṭā" — the half-moon adorning her matted hair. The lateral circle held to the side IS the crescent moon in Lalithā's matted hair viewed from the side — K23 IS Lalithā's hair-ornament in body-form. All eight Vasus adorn her matted locks.</span> · <span class="text-khad">Khaḍgamālā: "Vajreśvarī" — the thunderbolt-queen whose thunderbolt expands in all eight directions as all eight Vasus gather at Dhaniṣṭhā. The lateral circle-holder holds the vajra's lateral expansion. This is the most cosmically significant moment of the entire earth quarter.</span></div>
+</div></div></div>
+
+<!-- K24 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 24</div><div class="kc-name">Samasuñcita</div><div class="kc-devan">समसुञ्चित · The Equally Contracted</div></div><div class="kc-swara">Ni₁–Ni₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Samasuñcitaṃ vijñeyaṃ samaṃ suñcita-saṃsthitiḥ"</div><div class="kcs-src">NS 4.78 — Known as equally contracted: the posture of equal contraction</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Anala</strong> (first full appearance) — contraction IS fire's action: fire draws in oxygen, contracts matter into energy. Anala's entry signals the approaching transition to the fire quarter at K28.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa</strong> at Śatabhiṣā (λ Aquarii) · Deity: Varuṇa. The Hundred Physicians. Equal contraction in the body is the healer's therapeutic pressure — applied uniformly, like the hundred physicians applying equal treatment.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">16 — Ālapinī · the alāpa-shruti — Ni₁–Ni₂ begins the upper register's alāpa, the pre-dawn singing before the fire-quarter's sacrifice</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Varuṇapriya (24) · Varuṇa-beloved raga (water-god, the healer-water). Ni₂ as the therapeutic upper note that the hundred physicians use for their highest cure.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Bhairavi / Jaunpuri · the healing ragas of equal-application devotion</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Therapeutic compression of all fascial planes simultaneously — the clinical equivalent of what osteopaths call "balanced ligamentous tension." The body as its own physician administering the hundred healing pressures.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaś ca te namaś ca" — salutation from all hundred physicians simultaneously. The hundred-fold salutation of K24 is the Hundred Physicians (Śatabhiṣā) bowing to Rudra with equal force in all directions — equanimity AS devotion.</span> · <span class="text-lal">Lalithā Nāma 24: "Padmanābhasahodarī" — sister of Viṣṇu. Varuṇa (Śatabhiṣā's deity) is the deity of dharmic order — the equal contraction of K24 IS dharmic order applied to the body. Lalithā as Padmanābha's sister brings healing through the equally pressed lotus-navel.</span> · <span class="text-khad">Khaḍgamālā: "Mahāvajreśvarī" — the great thunderbolt-queen whose equal contraction IS the vajra compressed before release. Anala at K24 is the fire gathering before the fire-quarter's opening vajra-strike at K28. Kashyapa at Śatabhiṣā watches his Anala-child gathering energy.</span></div>
+</div></div></div>
+
+<!-- K25 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 25</div><div class="kc-name">Agratalasañcara</div><div class="kc-devan">अग्रतलसञ्चर · The Fore-Sole Traveller</div></div><div class="kc-swara">Ni₂</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Agratalasañcaraṃ nāma agratalena sañcaran"</div><div class="kcs-src">NS 4.80 — Named fore-sole-traveller: one who travels on the balls of the feet</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Anala</strong> — the ball of the foot (agratala) is where fire meets earth. Walking on balls of feet is Anala's mode: touch without full commitment, fire hovering just above Dhara's full contact.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Pūrva Bhādrapadā (α Pegasi) · Deity: Ajā Ekapāda (one-footed goat). The Nakshatra literally of the single raised foot. The fore-sole traveller of K25 walks as Ajā Ekapāda stands: always on the edge between touch and flight. Vasishtha at Pegasus — the flying horse — watches the approach to the aerial.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">17 — Madantī · the intoxicating-shruti; elevated walking on forefeet creates genuine proprioceptive intoxication of the inner ear — Madantī IS this vestibular wine</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Mārarañjanī (25) · the death-delighting raga — elevated walk above death's ground, Ni₂ as the note of this between-earth-and-sky travel</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kalyan / Yaman · the evening raga that travels between the day's earth and the night's ether</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Ball-of-foot mechanoreceptor maximum activation · Meissner's corpuscles (pressure receptors) at peak sensitivity · the fore-sole contact is neurologically "louder" than full-foot contact — the body hears the ground more acutely when touching it less</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ pādavate" — salutation to the lord of the foot. The lord of the fore-sole is Ajā Ekapāda standing at Pūrva Bhādrapadā. Vasishtha from Pegasus watches this lord of the foot travel across the stage as the flying horse travels across the sky — lightly, on the ball of each cosmic hoof.</span> · <span class="text-lal">Lalithā Nāma 25: "Caturbahusamanvitā" — four-armed, but K25 is the moment of two-foot travel where the two grounded arms of Lalithā are replaced by the two raised arms of the approaching aerial postures. The transition from four-ground to two-sky begins on the fore-sole.</span> · <span class="text-khad">Khaḍgamālā: "Tvaritā" — the swift-traveller. The fore-sole traveller of K25 IS Tvaritā — the swiftness that comes before flight, the last ground-based speed before the body learns to be aerial. Anala carries the dancer forward on fire-tipped feet.</span></div>
+</div></div></div>
+
+<!-- K26 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 26</div><div class="kc-name">Katisama</div><div class="kc-devan">कटिसम · The Even Waist</div></div><div class="kc-swara">Ni₂–Ni₃</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Katisamaṃ tu vijñeyaṃ kateḥ sāmyena saṃsthitam"</div><div class="kcs-src">NS 4.82 — Known as even-waist: placed in the evenness of the waist</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhruva</strong> at the body's equator — the waist IS the body's equatorial Pole Star. Upper and lower halves orbit the still waist-axis. Dhruva's most intimate human address: the equator of the standing body.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Vasishtha</strong> at Uttara Bhādrapadā (γ Pegasi) · Deity: Ahir Budhnya (the deep-sea serpent). The cosmic foundation below all foundations — the waist IS that hidden foundation. Vasishtha sees Ahir Budhnya coiled in the dancer's sacrum.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">18 — Rohiṇī · the becoming-red shruti — the waist's transition zone glows with the effort of holding the two halves in equilibrium as Ni₃ first appears</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Chārukesi (26) · the beautiful-kesi raga. Ni₃ (strong Kākalī Niṣāda) appears here for the first time in the earth quarter — the highest note of dissolution entering at the body's equatorial point, the waist.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Kafi / Bhimpalasi transition · the equatorial raga of perfect balance between upper and lower registers</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Core stability neural network peak — transversus abdominis + multifidus co-activation creates the "even waist" neuromechanically. Ahir Budhnya's deep-sea serpent IS the psoas — the deepest core muscle, coiled like a sea-serpent around the lumbar spine.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ śambhave ca" — salutation to the auspicious one. Śambhu (Śiva as the bringer of peace) is the auspicious evenness — the even waist IS Śambhu's peace brought to the body's equatorial point. Vasishtha at γ Pegasi sees the dancer's sacrum as Śambhu's throne.</span> · <span class="text-lal">Lalithā Nāma 26: "Mahāvajreśvarī" — the great thunderbolt-queen. The vajra's power center is always the middle — the even waist of K26 IS the thunderbolt's central point of maximum force. Ahir Budhnya's sea-serpent is the coiled vajra-power at the dancer's waist.</span> · <span class="text-khad">Khaḍgamālā: "Bheruṇḍā" — the double-headed fierce bird must have an even waist to hold its two heads aloft. K26 gives the Bheruṇḍā her center. Ni₃ appearing here is the first vivadi-note of the ether register arriving at the body's center before the full ether-dissolution of the fourth quarter.</span></div>
+</div></div></div>
+
+<!-- K27 -->
+<div class="kc"><div class="kc-head"><div><div class="kc-badge">KARANA 27</div><div class="kc-name">Latāvṛścika</div><div class="kc-devan">लतावृश्चिक · The Creeper-Scorpion</div></div><div class="kc-swara">Ma₁ (pivot)</div></div>
+<div class="kc-body">
+<div class="kc-shloka"><div class="kcs-text">"Latāvṛścikaṃ vijñeyaṃ latāvad vṛścika-saṃsthitiḥ"</div><div class="kcs-src">NS 4.84 — Known as creeper-scorpion: the scorpion posture like a creeper-vine</div></div>
+<div class="kr"><span class="kr-l">Vasu</span><span class="kr-v"><strong>Dhara→Anala transition</strong> — the scorpion's sting IS fire entering earth. K27 marks the exact moment of elemental transition: Dhara's earth-quarter ends; Anala's fire enters through the scorpion's sting.</span></div>
+<div class="kr"><span class="kr-l">Rishi / Nak.</span><span class="kr-v"><strong>Kashyapa→Atri transition</strong> — Kashyapa (father of serpents/scorpions) hands the sequence to Atri (the devourer of three worlds). The scorpion is the last serpent-energy; Atri's three-fold devouring fire awaits at K28.</span></div>
+<div class="kr"><span class="kr-l">Shruti</span><span class="kr-v">7 — Ugra · the fierce shruti of elemental transition — the scorpion's sting is the most fierce moment of the entire earth quarter</span></div>
+<div class="kr"><span class="kr-l">Melakartha</span><span class="kr-v">Sarasāngi (27) · the essence-limbed raga. Ma₁ as the pivot holding both earth (Sa through Ga₃) and fire (Ma₂ through Ni₃) registers simultaneously in this transitional Karana.</span></div>
+<div class="kr"><span class="kr-l">Hindustani</span><span class="kr-v">Marwa / Puriya · the ragas of the scorpion-threshold between day (earth) and night (fire)</span></div>
+<div class="kr"><span class="kr-l">Neuro</span><span class="kr-v">Full spinal arc (latā/creeper form) + tail-strike (vṛścika/scorpion form): the spine simultaneously demonstrates maximum extension AND maximum flexion at the moment of transition. The nervous system is "reset" by this paradoxical demand — this is the neurological svāhā of the earth quarter.</span></div>
+<div class="kc-synth"><div class="kcs-label">TEXTUAL SYNTHESIS</div>
+<div class="kcs-body"><span class="text-rud">Rudram Namakam: "Namaḥ śivāya ca śivatarāya ca" — the most auspicious AND the more-than-most-auspicious. K27 is the threshold of both: Dhara's earth-auspiciousness ends; Anala's fire-auspiciousness begins. The scorpion's sting IS Śiva's trident-tip at the boundary of earth and fire. Kashyapa passes his trident to Atri.</span> · <span class="text-lal">Lalithā Nāma 27: "Mūlamantrātmikā" — whose very Self IS the root mantra. K27 is the mūlamantra's transition consonant — the junction between the root (mūla = earth, K1–26) and its continuation (fire, K28 onward). The creeper reaches from earth to fire; the scorpion bridges the two with its sting. Ma₁ holds both worlds in its pivot-note.</span> · <span class="text-khad">Khaḍgamālā: "Nityaklinnā" — the ever-moist one who bridges earth and fire. The scorpion-vine is always moist: the creeper carries earth-moisture; the scorpion carries fire-venom. Nityaklinnā combines both in K27's transitional body. This is the Khaḍgamālā's first āvaraṇa completing — the outer ring of the Śrī Chakra closes at K27 as the inner fire-rings prepare to open at K28.</span></div>
+</div></div></div>
+
+</div><!-- end Q1 grid -->
